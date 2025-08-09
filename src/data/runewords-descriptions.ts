@@ -16,12 +16,12 @@ const runewordsDesc: TRunewordMeta = {
   +10 To Vitality
   15% Increased Attack Speed
   Knockback
-  Magic Damage Reduced By 2
+  Magic Damage Reduced By 7
   Level 4 Corpse Explosion (12 Charges)
   `,
 
   Fury: `
-  +209% Enhanced Damage
+  +280% Enhanced Damage
   40% Increased Attack Speed
   Prevent Monster Heal
   66% Chance Of Open Wounds
@@ -30,45 +30,44 @@ const runewordsDesc: TRunewordMeta = {
   -25% Target Defense
   20% Bonus To Attack Rating
   6% Life Stolen Per Hit
-  +5 To Frenzy (Barbarian Only)
+  +4% to Experience Gained
   `,
 
   "Holy Thunder": `
-  +60% Enhanced Damage
+  Level 5 Holy Shock Aura When Equipped
+  +100% Enhanced Damage
   -25% Target Defense
   Adds 5-30 Fire Damage
   Adds 21-110 Lightning Damage
   +75 Poison Damage Over 5 Seconds
-  +10 To Maximum Damage
+  +15 To Maximum Damage
   Lightning Resistance +60%
   +5 To Maximum Lightning Resistance
-  +3 To Holy Shock (Paladin Only)
-  Level 7 Chain Lightning (60 Charges)
+  Poison Length Reduced by 75%
   `,
 
   Honor: `
-  +160% Enhanced Damage
+  +160-190% Enhanced Damage
   +9 To Minimum Damage
   +9 To Maximum Damage
   25% Deadly Strike
-  +250 To Attack Rating
-  +1 to All Skills
+	20% Bonus to Attack Rating
+	+55% Faster Hit Recovery
+	+25% Increased Attack Speed
   7% Life Stolen Per Hit
-  Replenish Life +10
-  +10 To Strength
   +1 To Light Radius
   +2 To Mana After Each Kill
+  Repairs 1 durability in 25 seconds
   `,
 
   "King's Grace": `
-  +100% Enhanced Damage
-  +100% Damage To Demons
-  +50% Damage To Undead
+  +1 to All Skills
+  +130-180% Enhanced Damage
+  +150% Damage To Demons
+  +150% Damage To Undead
+  +150% Bonus to Attack Rating
   Adds 5-30 Fire Damage
   Adds 3-14 Cold Damage - 3 Second Duration
-  +150 To Attack Rating
-  +100 To Attack Rating Against Demons
-  +100 To Attack Rating Against Undead
   7% Life Stolen Per Hit
   `,
 
@@ -84,7 +83,7 @@ const runewordsDesc: TRunewordMeta = {
   `,
 
   Lionheart: `
-  +20% Enhanced Damage
+  +90-110% Enhanced Damage
   Requirements -15%
   +25 To Strength
   +10 To Energy
@@ -111,7 +110,9 @@ const runewordsDesc: TRunewordMeta = {
   -100 To Monster Defense Per Hit
   Prevent Monster Heal
   +50 To Attack Rating
+  7% Life stolen per hit
   Drain Life -5
+  Repairs 1 durability in 25 seconds
   `,
 
   Melody: `
@@ -142,22 +143,23 @@ const runewordsDesc: TRunewordMeta = {
 
   Nadir: `
   +50% Enhanced Defense
-  +10 Defense
+  +25 Defense
   +30 Defense vs. Missile
   Level 13 Cloak of Shadows (9 Charges)
   +2 To Mana After Each Kill
   +5 To Strength
-  -33% Extra Gold From Monsters
   -3 To Light Radius
+  Magic Damage Reduced by 4
+  Damage Reduced by 4
   `,
 
   Radiance: `
-  +75% Enhanced Defense
+  +33 to Life
   +30 Defense Vs. Missile
   +10 To Energy
   +10 To Vitality
   15% Damage Goes To Mana
-  Magic Damage Reduced By 3
+  Magic Damage Reduced By 5
   +33 To Mana
   Damage Reduced By 7
   +5 To Light Radius
@@ -174,19 +176,18 @@ const runewordsDesc: TRunewordMeta = {
   `,
 
   Silence: `
+  22% Chance to cast level 25 Amplify Damage on striking
   200% Enhanced Damage
   +75% Damage To Undead
   Requirements -20%
-  20% Increased Attack Speed
-  +50 To Attack Rating Against Undead
-  +2 To All Skills
+  40% Increased Attack Speed
+  +100 To Attack Rating Against Undead
+  +2-3 To All Skills
   All Resistances +75
-  20% Faster Hit Recovery
   11% Mana Stolen Per Hit
-  Hit Causes Monster To Flee 25%
-  Hit Blinds Target +33
   +2 To Mana After Each Kill
   30% Better Chance Of Getting Magic Items
+  +4% to Experience Gained
   `,
 
   Smoke: `
@@ -212,43 +213,47 @@ const runewordsDesc: TRunewordMeta = {
 
   Steel: `
   20% Enhanced Damage
-  +3 To Minimum Damage
-  +3 To Maximum Damage
+  Damage +3
+  5% Chance of Crushing Blow
   +50 To Attack Rating
   50% Chance Of Open Wounds
   25% Increased Attack Speed
   +2 To Mana After Each Kill
   +1 To Light Radius
+  Repairs 1 durability in 25 seconds
   `,
 
   Strength: `
-  35% Enhanced Damage
+  90-110% Enhanced Damage
   25% Chance Of Crushing Blow
   7% Life Stolen Per Hit
   +2 To Mana After Each Kill
   +20 To Strength
   +10 To Vitality
+  Repairs 1 durability in 25 seconds
   `,
 
   Venom: `
-  Hit Causes Monster To Flee 25%
+  +3 to Poison Skills
+  +30 to Venom
+  +(190-240)% Enhanced Damage
+  +(40-55)% Increased Attack Speed
+	-(20-30)% to Enemy Poison Resistance
   Prevent Monster Heal
   Ignore Target's Defense
   7% Mana Stolen Per Hit
-  Level 15 Poison Explosion (27 Charges)
-  Level 13 Poison Nova (11 Charges)
-  +273 Poison Damage Over 6 seconds
   `,
 
   Wealth: `
   300% Extra Gold From Monsters
-  100% Better Chance Of Getting Magic Items
+  1.0%/lvl Better Chance of Getting Magic Items (Based on Character Level)
+  +20% Faster Run/Walk
+	+10% Increased Attack Speed
   +2 To Mana After Each Kill
   +10 To Dexterity
   `,
 
   White: `
-  Hit Causes Monster To Flee 25%
   +10 To Vitality
   +3 To Poison And Bone Skills (Necromancer Only)
   +3 To Bone Armor (Necromancer Only)
@@ -257,17 +262,20 @@ const runewordsDesc: TRunewordMeta = {
   Magic Damage Reduced By 4
   20% Faster Cast Rate
   +13 To Mana
+  +2 Life after each Kill
   `,
 
   Zephyr: `
-  +33% Enhanced Damage
-  +66 To Attack Rating
+  14% Chance To Cast Level 2 Twister On Striking
+  +100% Enhanced Damage
   Adds 1-50 Lightning Damage
   -25% Target Defense
-  +25 Defense
   25% Faster Run/Walk
   25% Increased Attack Speed
-  7% Chance To Cast Level 1 Twister When Struck
+  20% Bonus to Attack Rating
+	Piercing Attack
+	+30 to Mana
+  
   `,
 
   Beast: `
@@ -278,11 +286,12 @@ const runewordsDesc: TRunewordMeta = {
   25% Chance of Open Wounds
   +3 To Werebear
   +3 To Lycanthropy
+  +3 to Hunger
   Prevent Monster Heal
   +25-40 To Strength (varies)
   +10 To Energy
   +2 To Mana After Each Kill
-  Level 13 Summon Grizzly (5 Charges)
+  +2% to Experience Gained
   `,
 
   Bramble: `
@@ -297,23 +306,26 @@ const runewordsDesc: TRunewordMeta = {
   Poison Resist +100%
   +13 Life After Each Kill
   Level 13 Spirit of Barbs (33 Charges)
+  +4% to Experience Gained
   `,
 
   "Breath of the Dying": `
-  50% Chance To Cast Level 20 Poison Nova When You Kill An Enemy
+  66% Chance To Cast Level 45 Poison Nova When You Kill An Enemy
   Indestructible
+  +1 to All Skills
   +60% Increased Attack Speed
   +350-400% Enhanced Damage (varies)
   +200% Damage To Undead
+  +200% Damage to Demons
   -25% Target Defense
   +50 To Attack Rating
-  +50 To Attack Rating Against Undead
+  +100 To Attack Rating Against Undead
   7% Mana Stolen Per Hit
   12-15% Life Stolen Per Hit (varies)
-  Prevent Monster Heal
 <U>+30 To All Attributes</U>
   +1 To Light Radius
   Requirements -20%
+  +4% to Experience Gained
   `,
 
   "Call to Arms": `
@@ -322,12 +334,13 @@ const runewordsDesc: TRunewordMeta = {
   +250-290% Enhanced Damage (varies)
   Adds 5-30 Fire Damage
   7% Life Stolen Per Hit
-  +2-6 To Battle Command (varies)*
-  +1-6 To Battle Orders (varies)*
-  +1-4 To Battle Cry (varies)*
+  +1 To Battle Command
+  +1 To Battle Orders
+  +1 To Battle Cry
   Prevent Monster Heal
   Replenish Life +12
   30% Better Chance of Getting Magic Items
+  +4% to Experience Gained
   `,
 
   Chaos: `
@@ -340,6 +353,7 @@ const runewordsDesc: TRunewordMeta = {
   +1 To Whirlwind
   +10 To Strength
   +15 Life After Each Demon Kill
+  +2% to Experience Gained
   `,
 
   "Chains of Honor": `
@@ -349,27 +363,27 @@ const runewordsDesc: TRunewordMeta = {
   8% Life Stolen Per Hit
   +70% Enhanced Defense
   +20 To Strength
-  Replenish Life +7
   All Resistances +65
   Damage Reduced By 8%
   25% Better Chance of Getting Magic Items
+  +2 Life after each Kill
+  +4% to Experience Gained
   `,
 
   "Crescent Moon": `
-  10% Chance To Cast Level 17 Chain Lightning On Striking
-  7% Chance To Cast Level 13 Static Field On Striking
+  34% Chance To Cast Level 34 Chain Lightning On Striking
+  25% Chance To Cast Level 25 Static Field On Striking
+  Level (14-16) Holy Shock Aura When Equipped
   +20% Increased Attack Speed
   +180-220% Enhanced Damage (varies)
   Ignore Target's Defense
-  -35% To Enemy Lightning Resistance
+  -15% To Enemy Lightning Resistance
   25% Chance of Open Wounds
-  +9-11 Magic Absorb (varies)
+  +12-18 Magic Absorb (varies)
   +2 To Mana After Each Kill
-  Level 18 Summon Spirit Wolf (30 Charges)
   `,
 
   Delirium: `
-  1% Chance To Cast Level 50 Delirium* (morph) When Struck
   6% Chance To Cast Level 14 Mind Blast When Struck
   14% Chance To Cast Level 13 Terror When Struck
   11% Chance To Cast Level 18 Confuse On Striking
@@ -379,34 +393,36 @@ const runewordsDesc: TRunewordMeta = {
   50% Extra Gold From Monsters
   25% Better Chance of Getting Magic Items
   Level 17 Attract (60 Charges)
+  +2% to Experience Gained
   `,
 
   Doom: `
-  5% Chance To Cast Level 18 Volcano On Striking
+  20% Chance To Cast Level 40 Blizzard On Striking
   Level 12 Holy Freeze Aura When Equipped
   +2 To All Skills
   +45% Increased Attack Speed
   +330-370% Enhanced Damage (varies)
-  -(40-60)% To Enemy Cold Resistance (varies)
+  -(50-75)% To Enemy Cold Resistance (varies)
   20% Deadly Strike
   25% Chance of Open Wounds
   Prevent Monster Heal
-  Freezes Target +3
+  Slows Target by 20%
   Requirements -20%
+  +6% to Experience Gained
   `,
 
   Duress: `
   +40% Faster Hit Recovery
-  +10-20% Enhanced Damage (varies)
-  Adds 37-133 Cold Damage 2 sec. Duration (Normal)
+  +80-100% Enhanced Damage (varies)
   15% Chance of Crushing Blow
   33% Chance of Open Wounds
   +150-200% Enhanced Defense (varies)
-  -20% Slower Stamina Drain
   Cold Resist +45%
   Lightning Resist +15%
   Fire Resist +15%
   Poison Resist +15%
+  +(15-20) to Mana after each Kill
+	+(9-15) Life after each Kill
   `,
 
   Enigma: `
@@ -414,27 +430,27 @@ const runewordsDesc: TRunewordMeta = {
   +45% Faster Run/Walk
   +1 To Teleport
   +750-775 Defense (varies)
-  + (0.75 Per Character Level) +0-74 To Strength (Based On Character Level)
   Increase Maximum Life 5%
-  Damage Reduced By 8%
   +14 Life After Each Kill
   15% Damage Taken Goes To Mana
-  + (1 Per Character Level) +1-99% Better Chance of Getting Magic Items (Based On Character Level)
+  +0.5%/lvl Better Chance of Getting Magic Items (Based on Character Level)
+  Damage Reduced by 7
+  +2% to Experience Gained
   `,
 
   Eternity: `
   Indestructible
   +260-310% Enhanced Damage (varies)
+  30% Increased Attack Speed
   +9 To Minimum Damage
   7% Life Stolen Per Hit
   20% Chance of Crushing Blow
   Hit Blinds Target
   Slows Target By 33%
-  Regenerate Mana 16%
-  Replenish Life +16
   Cannot Be Frozen
   30% Better Chance Of Getting Magic Items
   Level 8 Revive (88 Charges)
+  +15% to Experience Gained
   `,
 
   Exile: `
@@ -444,24 +460,28 @@ const runewordsDesc: TRunewordMeta = {
   +30% Faster Block Rate
   Freezes Target
   +220-260% Enhanced Defense (varies)
-  Replenish Life +7
+  +2 Life after each Kill
   +5% To Maximum Cold Resist
   +5% To Maximum Fire Resist
   25% Better Chance Of Getting Magic Items
   Repairs 1 Durability in 4 Seconds
+  +6% to Experience Gained
   `,
 
   Famine: `
   +30% Increased Attack Speed
   +320-370% Enhanced Damage (varies)
   Ignore Target's Defense
-  Adds 180-200 Magic Damage
-  Adds 50-200 Fire Damage
-  Adds 51-250 Lightning Damage
-  Adds 50-200 Cold Damage
+  Adds 200-300 Magic Damage
+  Adds 200-210 Fire Damage
+  Adds 200-210 Lightning Damage
+  Adds 200-210 Cold Damage
   12% Life Stolen Per Hit
   Prevent Monster Heal
   +10 To Strength
+  +50% Deadly Strike
+  +(10-20) to all Attributes
+  +4% to Experience Gained
   `,
 
   Gloom: `
@@ -483,10 +503,11 @@ const runewordsDesc: TRunewordMeta = {
   +280-330% Enhanced Damage (varies)
   Ignore Target's Defense
   7% Life Stolen Per Hit
-  -20% To Enemy Fire Resistance
+  -(20-25)% To Enemy Fire Resistance
   20% Deadly Strike
   Hit Blinds Target
-  Freezes Target +3
+  Slows Target by 20%
+  +6% to Experience Gained
   `,
 
   "Heart of the Oak": `
@@ -500,21 +521,22 @@ const runewordsDesc: TRunewordMeta = {
   Replenish Life +20
   Increase Maximum Mana 15%
   All Resistances +30-40 (varies)
-  Level 4 Oak Sage (25 Charges)
   Level 14 Raven (60 Charges)
+  +2% to Experience Gained
   `,
 
   Kingslayer: `
   +30% Increased Attack Speed
-  +230-270% Enhanced Damage (varies)
+  +260-300% Enhanced Damage (varies)
   -25% Target Defense
   20% Bonus To Attack Rating
   33% Chance of Crushing Blow
   50% Chance of Open Wounds
-  +1 To Vengeance
+  +1 To Berserk
   Prevent Monster Heal
   +10 To Strength
-  40% Extra Gold From Monsters
+  350% Extra Gold From Monsters
+  +4% to Experience Gained
   `,
 
   Passion: `
@@ -522,13 +544,13 @@ const runewordsDesc: TRunewordMeta = {
   +160-210% Enhanced Damage (varies)
   50-80% Bonus To Attack Rating (varies)
   +75% Damage To Undead
-  +50 To Attack Rating Against Undead
+  +100 To Attack Rating Against Undead
   Adds 1-50 Lightning Damage
   +1 To Berserk
   +1 To Zeal
   Hit Blinds Target +10
-  Hit Causes Monster To Flee 25%
   75% Extra Gold From Monsters
+  +2 Life after each Kill
   Level 3 Heart of Wolverine (12 Charges)
   `,
 
@@ -536,10 +558,10 @@ const runewordsDesc: TRunewordMeta = {
   +25% Faster Hit Recovery
   +140-170% Enhanced Defense (varies)
   All Resistances +25-35 (varies)
-  Damage Reduced by 3
+  Damage Reduced by 24
   Magic Damage Reduced by 17
   +2 To Mana After Each Kill
-  +1 To Light Radius
+  Cannot Be Frozen
   Repairs Durability 1 In 4 Seconds
   `,
 
@@ -557,7 +579,7 @@ const runewordsDesc: TRunewordMeta = {
 
   Splendor: `
   +1 To All Skills
-  +10% Faster Cast Rate
+  +20% Faster Cast Rate
   +20% Faster Block Rate
   +60-100% Enhanced Defense (varies)
   +10 To Energy
@@ -580,16 +602,16 @@ const runewordsDesc: TRunewordMeta = {
   `,
 
   Wind: `
-  10% Chance To Cast Level 9 Tornado On Striking
-  +20% Faster Run/Walk
+  33% Chance To Cast Level 30 Tornado On Striking
+  25% Chance to Cast Level 35 Twister On Striking
+  +40% Faster Run/Walk
   +40% Increased Attack Speed
-  +15% Faster Hit Recovery
-  +120-160% Enhanced Damage (varies)
+  +30% Faster Hit Recovery
+  +260-280% Enhanced Damage (varies)
   -50% Target Defense
-  +50 To Attack Rating
   Hit Blinds Target
-  +1 To Light Radius
-  Level 13 Twister (127 Charges)
+  +2% to Experience Gained
+	Prevent Monster Heal
   `,
 
   Brand: `
@@ -599,11 +621,11 @@ const runewordsDesc: TRunewordMeta = {
   Ignore Target's Defense
   20% Bonus to Attack Rating
   +280-330% Damage To Demons (varies)
-
+  +30% Increased Attack Speed
   20% Deadly Strike
-  Prevent Monster Heal
   Knockback
   Fires Explosive Arrows or Bolts (15)
+  +6% to Experience Gained
   `,
 
   Death: `
@@ -611,6 +633,7 @@ const runewordsDesc: TRunewordMeta = {
   25% Chance To Cast Level 18 Glacial Spike On Attack
   Indestructible
   +300-385% Enhanced Damage (varies)*
+  +25% Increased Attack Speed
   20% Bonus To Attack Rating
   +50 To Attack Rating
   Adds 1-50 Lightning Damage
@@ -618,37 +641,39 @@ const runewordsDesc: TRunewordMeta = {
   50% Chance of Crushing Blow
   +(0.5 per Character Level) 0.5-49.5% Deadly Strike (Based on Character Level)
   +1 To Light Radius
-  Level 22 Blood Golem  (15 Charges)
   Requirements -20%
+  +4% to Experience Gained
   `,
 
   Destruction: `
-  23% Chance To Cast Level 12 Volcano On Striking
-  5% Chance To Cast Level 23 Molten Boulder On Striking
+  23% Chance To Cast Level 35 Volcano On Striking
   100% Chance To Cast level 45 Meteor When You Die
-  15% Chance To Cast Level 22 Nova On Attack
+  15% Chance To Cast Level 35 Nova On Attack
+  +0.5/lvl to Strength (Based on Character Level)
   +350% Enhanced Damage
   Ignore Target's Defense
-  Adds 100-180 Magic Damage
+  Adds 500 Magic Damage
   7% Mana Stolen Per Hit
   20% Chance Of Crushing Blow
   20% Deadly Strike
   Prevent Monster Heal
   +10 To Dexterity
+  +8% to Experience Gained
   `,
 
   Dragon: `
   20% Chance to Cast Level 18 Venom When Struck
   12% Chance To Cast Level 15 Hydra On Striking
-  Level 14 Holy Fire Aura When Equipped
+  Level 16-21 Holy Fire Aura When Equipped
   +360 Defense
   +230 Defense Vs. Missile
-  +3-5 To All Attributes (varies)
+  +5-10 To All Attributes (varies)
   +0.375-37.125 To Strength (Based on Character Level)
   Increase Maximum Mana 5% (Armor Only)
   +50 To Mana (Shields Only)
   +5% To Maximum Lightning Resist
   Damage Reduced by 7
+  +4% to Experience Gained
   `,
 
   Dream: `
@@ -661,15 +686,16 @@ const runewordsDesc: TRunewordMeta = {
   Increase Maximum Life 5% (Helms Only)
   +50 To Life (Shields Only)
   +0.625-61.875 To Mana (Based On Character Level)
-  All Resistances +5-20 (varies)
-  12-25% Better Chance of Getting Magic Items (varies)
+  All Resistances +14-20 (varies)
+  20-30% Better Chance of Getting Magic Items (varies)
+  +2% to Experience Gained
   `,
 
   Edge: `
   Level 15 Thorns Aura When Equipped
   +35% Increased Attack Speed
-  +320-380% Damage To Demons (varies)
-  +280% Damage To Undead
+  +280-320% Enhanced Damage
+  Piercing Attack
   +75 Poison Damage Over 5 Seconds
   7% Life Stolen Per Hit
   Prevent Monster Heal
@@ -680,16 +706,18 @@ const runewordsDesc: TRunewordMeta = {
 
   Faith: `
   Level 12-15 Fanaticism Aura When Equipped (varies)
-  +1-2 To All Skills (varies)
+  +2 To All Skills
+  Adds 50-100 Damage
   +330% Enhanced Damage
   Ignore Target's Defense
   300% Bonus To Attack Rating
   +75% Damage To Undead
-  +50 To Attack Rating Against Undead
+  +100 To Attack Rating Against Undead
   +120 Fire Damage
   All Resistances +15
   10% Reanimate As: Returned
   75% Extra Gold From Monsters
+  +4% to Experience Gained
   `,
 
   Fortitude: `
@@ -700,12 +728,13 @@ const runewordsDesc: TRunewordMeta = {
   +9 To Minimum Damage
   +50 To Attack Rating
   20% Deadly Strike
-  Hit Causes Monster To Flee 25%
   +200% Enhanced Defense
   +X To Life (Based on Character Level)*
   All Resistances +25-30 (varies)
   12% Damage Taken Goes To Mana
   +1 To Light Radius
+  +2 Life after each Kill
+  +2% to Experience Gained
 
   #### Body Armor
   20% Chance To Cast Level 15 Chilling Armor when Struck
@@ -714,32 +743,34 @@ const runewordsDesc: TRunewordMeta = {
   +200% Enhanced Defense
   +15 Defense
   +X To Life (Based on Character Level)*
-  Replenish Life +7
   +5% To Maximum Lightning Resist
   All Resistances +25-30 (varies)
   Damage Reduced By 7
   12% Damage Taken Goes To Mana
   +1 To Light Radius
+  +2 Life after each Kill
+	+2% to Experience Gained
   `,
 
   Grief: `
-  35% Chance To Cast Level 15 Venom On Striking
+  +(300-350) to Minimum Damage
+	+(300-350) to Maximum Damage
   +30-40% Increased Attack Speed (varies)
-  Damage +340-400 (varies)
   Ignore Target's Defense
   -25% Target Defense
-  +(1.875 per character level) 1.875-185.625% Damage To Demons (Based on Character Level) 
   Adds 5-30 Fire Damage
   -20-25% To Enemy Poison Resistance (varies)
-  20% Deadly Strike
-  Prevent Monster Heal
+  33% Deadly Strike
   +2 To Mana After Each Kill
   +10-15 Life After Each Kill (varies)
+  +20% Bonus to Attack Rating
+	+7% Mana stolen per hit
+	+4% to Experience Gained
   `,
 
   Harmony: `
   Level 10 Vigor Aura When Equipped
-  +200-275% Enhanced Damage (varies)
+  +275-325% Enhanced Damage (varies)
   +9 To Minimum Damage
   +9 To Maximum Damage
   Adds 55-160 Lightning Damage
@@ -755,16 +786,17 @@ const runewordsDesc: TRunewordMeta = {
 
   Ice: `
   100% Chance To Cast Level 40 Blizzard When You Level-up
-  25% Chance To Cast Level 22 Frost Nova On Striking
+  25% Chance To Cast Level 35 Frost Nova On Striking
   Level 18 Holy Freeze Aura When Equipped
   +20% Increased Attack Speed
   +140-210% Enhanced Damage (varies)
   Ignore Target's Defense
   +25-30% To Cold Skill Damage (varies)
-  -20% To Enemy Cold Resistance
+  -(25-30)% To Enemy Cold Resistance
   7% Life Stolen Per Hit
   20% Deadly Strike
   3.125-309.375 Extra Gold From Monsters (Based on Character Level)
+  +4% to Experience Gained
   `,
 
   Infinity: `
@@ -778,6 +810,7 @@ const runewordsDesc: TRunewordMeta = {
   0.5-49.5 To Vitality (Based on Character Level)
   30% Better Chance of Getting Magic Items
   Level 21 Cyclone Armor (30 Charges)
+  +6% to Experience Gained
   `,
 
   Insight: `
@@ -804,18 +837,20 @@ const runewordsDesc: TRunewordMeta = {
   60-70% Chance of Crushing Blow (varies)
   Prevent Monster Heal
   Hit Blinds Target
-  +(0.5 per character level) 0.5-49.5% Chance of Getting Magic Items (Based on Character Level) 
+  +(0.5 per character level) 0.5-49.5% Chance of Getting Magic Items (Based on Character Level)
+  Repairs 1 durability in 25 seconds
+  +10% to Experience Gained
   `,
 
   Lawbringer: `
-  20% Chance To Cast Level 15 Decrepify On Striking
-  Level 16-18 Sanctuary Aura When Equipped (varies)
+  25% Chance To Cast Level 30 Decrepify On Striking
+  Level 30-31 Sanctuary Aura When Equipped (varies)
   -50% Target Defense
-  Adds 150-210 Fire Damage
-  Adds 130-180 Cold Damage
+  Adds 200-210 Fire Damage
+  Adds 200-210 Cold Damage
   7% Life Stolen Per Hit
-  Slain Monsters Rest In Peace
   +200-250 Defense Vs. Missile (varies)
+  +200-250 Defense Vs. Melee (varies)
   +10 To Dexterity
   75% Extra Gold From Monsters
   `,
@@ -828,21 +863,21 @@ const runewordsDesc: TRunewordMeta = {
   +75% Damage To Demons
   +100 To Attack Rating Against Demons
   Prevent Monster Heal
+  -100 to Monster Defense Per Hit
   +10 To Energy
   +10-15 Magic Absorb (varies)
   Level 16 Heart Of Wolverine (20 Charges)
-  Level 17 Iron Golem (14 Charges)
   `,
 
   Obedience: `
   30% Chance To Cast Level 21 Enchant When You Kill An Enemy
   40% Faster Hit Recovery
   +370% Enhanced Damage
+  +25% Increased Attack Speed
   -25% Target Defense
   Adds 3-14 Cold Damage 3 Second Duration (Normal)
   -25% To Enemy Fire Resistance
   40% Chance of Crushing Blow
-  +200-300 Defense (varies)
   +10 To Strength
   +10 To Dexterity
   All Resistances +20-30 (varies)
@@ -857,11 +892,12 @@ const runewordsDesc: TRunewordMeta = {
   +350-400% Enhanced Damage (varies)
   Ignores Target's Defense
   14% Mana Stolen Per Hit
-  -28% To Enemy Fire Resistance
+  -(28-30)% To Enemy Fire Resistance
   20% Deadly Strike
   +350-400 Defense Vs. Missile (varies)
   +15-21 Fire Absorb (varies)
-
+  +8% to Experience Gained
+  
   #### Shields
   100% Chance To Cast level 40 Blaze When You Level-up
   40% Chance To Cast Level 22 Firestorm On Striking
@@ -876,38 +912,39 @@ const runewordsDesc: TRunewordMeta = {
   `,
 
   Pride: `
-  25% Chance To Cast Level 17 Fire Wall When Struck
-  Level 16-20 Concentration Aura When Equipped (varies)
-  260-300% Bonus To Attack Rating (varies)
+  25% Chance To Cast Level 50 Fire Wall On Striking
+  Level 18-20 Concentration Aura When Equipped (varies)
+  +(260-300)% Enhanced Damage
+  +20% Increased Attack Speed
   +1-99% Damage To Demons (Based on Character Level)
-  Adds 50-280 Lightning Damage
   20% Deadly Strike
   Hit Blinds Target
-  Freezes Target +3
+  Slows Target by 20%
   +10 To Vitality
-  Replenish Life +8
-  1.875-185.625% Extra Gold From Monsters (Based on Character Level)
+  3.75%/lvl Extra Gold from Monsters (Based on Character Level)
+  +1.0%/lvl Damage to Undead (Based on Character Level)
+  +6% to Experience Gained
   `,
 
   Rift: `
-  20% Chance To Cast Level 16 Tornado On Striking
-  16% Chance To Cast Level 21 Frozen Orb On Attack
+  20% Chance To Cast Level 30 Tornado On Striking
+  16% Chance To Cast Level 30 Frozen Orb On Attack
   20% Bonus To Attack Rating
-  Adds 160-250 Magic Damage
-  Adds 60-180 Fire Damage
+  +15% Increased Attack Speed
+  Adds 250-400 Magic Damage
   +5-10 To All Stats (varies)
   +10 To Dexterity
   38% Damage Taken Goes To Mana
   75% Extra Gold From Monsters
-  Level 15 Iron Maiden (40 Charges)
   Requirements -20%
+  +2% to Experience Gained
   `,
 
   Spirit: `
   #### Swords
-  +2 To All Skills
-  +25-35% Faster Cast Rate (varies)
-  +55% Faster Hit Recovery
+  +1 To All Skills
+  +30% Faster Cast Rate
+  +25% Faster Hit Recovery
   Adds 1-50 Lightning Damage
   Adds 3-14 Cold Damage 3 Second Duration (Normal)
   +75 Poison Damage Over 5 Seconds
@@ -918,9 +955,9 @@ const runewordsDesc: TRunewordMeta = {
   +3-8 Magic Absorb (varies)
 
   #### Shields
-  +2 To All Skills
-  +25-35% Faster Cast Rate (varies)
-  +55% Faster Hit Recovery
+  +1 To All Skills
+  +30% Faster Cast Rate
+  +25% Faster Hit Recovery
   +250 Defense Vs. Missile
   +22 To Vitality
   +89-112 To Mana (varies)
@@ -932,14 +969,14 @@ const runewordsDesc: TRunewordMeta = {
   `,
 
   "Voice of Reason": `
-  15% Chance To Cast Level 13 Frozen Orb On Striking
-  18% Chance To Cast Level 20 Ice Blast On Striking
+  15% Chance To Cast Level 13 Frozen Orb On Attack
+  20% Chance To Cast Level 50 Ice Blast On Striking
+  +(1-2) to Cold Skills
   +50 To Attack Rating
-  +220-350% Damage To Demons
-  +355-375% Damage To Undead (varies)
-  +50 To Attack Rating Against Undead
-  Adds 100-220 Cold Damage
-  -24% To Enemy Cold Resistance
+  +250-350% Damage To Demons
+  +280-300% Damage To Undead (varies)
+  +100 To Attack Rating Against Undead
+  -(24-36)% To Enemy Cold Resistance
   +10 To Dexterity
   Cannot Be Frozen
   75% Extra Gold From Monsters
@@ -949,42 +986,45 @@ const runewordsDesc: TRunewordMeta = {
   Wrath: `
   30% Chance To Cast Level 1 Decrepify On Striking
   5% Chance To Cast Level 10 Life Tap On Striking
-  +375% Damage To Demons
+  +(300-375)% Enhanced Damage
+	+30% Increased Attack Speed
   +100 To Attack Rating Against Demons
-  +250-300% Damage To Undead (varies)
   Adds 85-120 Magic Damage
   Adds 41-240 Lightning Damage
   20% Chance of Crushing Blow
   Prevent Monster Heal
   +10 To Energy
   Cannot Be Frozen
+  +2% to Experience Gained
   `,
 
   Bone: `
   15% Chance To Cast level 10 Bone Armor When Struck
-  15% Chance To Cast level 10 Bone Spear On Striking
   +2 To Necromancer Skill Levels
+  +(15-20)% Faster Cast Rate
   +100-150 To Mana (varies)
-  All Resistances +30
+  All Resistances +15
   Damage Reduced By 7
+  Attacker Takes Damage of 28
   `,
 
   Enlightenment: `
   5% Chance To Cast Level 15 Blaze When Struck
-  5% Chance To Cast level 15 Fire Ball On Striking
   +2 To Sorceress Skill Levels
   +1 To Warmth
+  +(15-20)% Faster Cast Rate
+  +20% Faster Hit Recovery
   +30% Enhanced Defense
   Fire Resist +30%
   Damage Reduced By 7
   `,
 
   Myth: `
-  3% Chance To Cast Level 1 Howl When Struck
   10% Chance To Cast Level 1 Taunt On Striking
   +2 To Barbarian Skill Levels
   +30 Defense Vs. Missile
   Replenish Life +10
+  +20% Faster Run/Walk
   Attacker Takes Damage of 14
   Requirements -15%
   `,
@@ -1002,23 +1042,23 @@ const runewordsDesc: TRunewordMeta = {
   Principle: `
   100% Chance To Cast Level 5 Holy Bolt On Striking
   +2 To Paladin Skill Levels
-  15% Slower Stamina Drain
-  +5% To Maximum Poison Resist
   Fire Resist +30%
+  +10 to Dexterity
+	Replenish Life +5
   `,
 
   Rain: `
   5% Chance To Cast Level 15 Cyclone Armor When Struck
-  5% Chance To Cast Level 15 Twister On Striking
   +2 To Druid Skills
+  +(15-20)% Faster Cast Rate
   +100-150 To Mana (varies)
   Lightning Resist +30%
-  Magic Damage Reduced By 7
   15% Damage Taken Goes to Mana
+  +2 Life after each Kill
   `,
 
   Treachery: `
-  5% Chance To Cast Level 15 Fade When Struck
+  50% Chance To Cast Level 15 Fade When Struck
   25% Chance To Cast level 15 Venom On Striking
   +2 To Assassin Skills
   +45% Increased Attack Speed
@@ -1032,37 +1072,38 @@ const runewordsDesc: TRunewordMeta = {
   20% Chance to Cast level 12 Lower Resist when struck
   25% Chance to Cast level 15 Poison Nova on striking
   Level 13-17 Cleansing Aura When Equipped (varies)
-  +1-2 All Skills
+  +2 All Skills
   +20% Increased Attack Speed
   +220-320% Enhanced Damage (varies)
-  -23% To Enemy Poison Resistance
+  -(25-30)% To Enemy Poison Resistance
   0.3% (0-29.7) Deadly Strike (Based on Character Level)
   +25% Chance of Open Wounds
-  Freezes Target +3
+  Slows Target by 20%
+  +2% to Experience Gained
   `,
 
   Pattern: `
-  +30% Faster Block Rate
-  +40-80% Enhanced Damage (varies)
-  10% Bonus to Attack Rating
-  Adds 17-62 Fire Damage
+  +1 to Martial Arts Skills
+  +15% Increased Attack Speed
+	Adds 100 Fire/Lightning/Cold Damage
+  +80-120% Enhanced Damage (varies)
   Adds 1-50 Lightning Damage
   Adds 3-14 Cold Damage
   +75 Poison Damage Over 5 Seconds
-  +6 to Strength
-  +6 to Dexterity
+  +15 to Strength
+  +15 to Dexterity
   All Resistances +15
   `,
 
   "Unbending Will": `
   18% Chance to cast Level 18 Taunt on striking
   +3 To Combat Skills (Barbarian Only)
-  +20-30% Increased Attack Speed (varies)
+  +30% Increased Attack Speed
   +300-350% Enhanced Damage (varies)
   +9 To Maximum Damage
   +50 To Attack Rating
   +75% Damage to Undead
-  +50 Attack Rating Against Undead
+  +100 Attack Rating Against Undead
   8-10% Life Stolen Per Hit (varies)
   Prevent Monster Heal
   +10 To Strength
@@ -1078,7 +1119,7 @@ const runewordsDesc: TRunewordMeta = {
   4-8% Mana Stolen Per Hit (varies)
   +30% Enhanced Defense
   +10 Energy
-  15% Slower Stamina Drain
+  Replenish Life +5
   Cannot Be Frozen
   +5 Mana After Each Kill
   15% Damage Taken Goes to Mana
@@ -1087,8 +1128,8 @@ const runewordsDesc: TRunewordMeta = {
   Obsession: `
   Indestructible
   24% Chance to cast level 10 Weaken when struck
-  +4 To All Skills
-  +65% Faster Cast Rate
+  +5 To All Skills
+  +100% Faster Cast Rate
   +60% Faster Hit Recovery
   Knockback
   +10 To Vitality
@@ -1098,6 +1139,7 @@ const runewordsDesc: TRunewordMeta = {
   All Resistances +60-70 (varies)
   75% Extra Gold from Monsters
   30% Better Chance of Getting Magic Items
+  +4% to Experience Gained
   `,
 
   "Flickering Flame": `
@@ -1110,6 +1152,7 @@ const runewordsDesc: TRunewordMeta = {
   Half Freeze Duration
   +5% To Maximum Fire Resist
   Poison Length Reduced by 50%
+  +2% to Experience Gained
   `,
 
   Mist: `
@@ -1121,9 +1164,10 @@ const runewordsDesc: TRunewordMeta = {
   +9 To Maximum Damage
   20% Bonus to Attack Rating
   Adds 3-14 Cold Damage
-  Freeze Target +3
+  Slows Target by 20%
   +24 Vitality
   All Resistances +40
+  +4% to Experience Gained
   `,
 
   /* Patch 2.6 */
@@ -1135,7 +1179,7 @@ const runewordsDesc: TRunewordMeta = {
   Increase Maximum Life 5%
   Replenish Life +30
   Damage Reduced by 7
-  Physical Damage Received Reduced by 10-15%
+  Physical Damage Received Reduced by 10%
   `,
 
   Cure: `
@@ -1183,7 +1227,7 @@ const runewordsDesc: TRunewordMeta = {
   +30% Increased Attack Speed
   +180-200% Enhanced Damage
   +75% Damage to Undead
-  +50 to Attack Rating against Undead
+  +100 to Attack Rating against Undead
   +10 to Dexterity
 
   #### Body Armors
@@ -1192,21 +1236,22 @@ const runewordsDesc: TRunewordMeta = {
   +20% Faster Hit Recovery
   +6 to Evade
   +10 to Dexterity
-  50% Slower Stamina Drain
   +All Resistances +10
+  Replenish Life +5
   `,
 
   Mosaic: `
-  +50% chance for finishing moves to not consume charges
   +2 to Martial Arts (Assassin only)
-  +20% Increased Attack Speed
-  +200-250% Enhanced Damage
-  +20% Bonus to Attack Rating
   7% Life Steal
   +8-15% to Cold Skill Damage
   +8-15% to Lightning Skill Damage
   +8-15% to Fire Skill Damage
+  -(5-12)% to Enemy Cold Resistance
+	-(5-12)% to Enemy Lightning Resistance
+	-(5-12)% to Enemy Fire Resistance
   Prevent Monster Heal
+  Hit Blinds Target +1
+	+2% to Experience Gained
   `,
 
   Metamorphosis: `
@@ -1218,7 +1263,135 @@ const runewordsDesc: TRunewordMeta = {
   +10 to Strength
   +10 to Vitality
   All Resistances +10
-  Cannot be Frozen
+  Curse Duration Reduced by 34%
+  +2% to Experience Gained
+  `,
+  
+  "Fortune (BT only)": `
+  Level 7 Prayer Aura When Equipped
+  20% Chance to cast level 20 Blaze when struck
+  +77% Enhanced Defense
+  20-35% Better Chance of Getting Magic Items (varies)
+  +77% Extra Gold from Monsters
+  +7 to Mana after each kill
+  Damage Reduced by 7
+  +20% Faster Hit Recovery
+  `,
+
+  "Knowledge (BT only)": `
+  +3 to Warmth
+  +20-30 Energy
+  +25% Faster Hit Recovery
+  +15-25 Faster Run/Walk
+  15% Damage Taken Goes To Mana
+  +2 to Mana after each Kill
+  `,
+
+  "Revenge (BT only)": `
+  +20% Increased Attack Speed 
+  +33% Chance to cast level 8 Nova on striking 
+  +33% Chance to cast level 8 Fireball on striking 
+  +33% Chance to cast level 8 Frost Nova on striking
+ 	Adds 3-14 Cold Damage 
+ 	Adds 1-50 Lightning Damage 
+  Adds 5-30 Fire Damage 
+  `,
+
+  "Tempest (BT only)": `
+  +2 to All Skills
+  +25% Faster Cast Rate
+  +25% Increased Attack Speed 
+  +24% Faster Hit Recovery 
+  +50 to Thunderstorm
+  +35% to Better Chance of Getting Magic Items
+  +20% Chance of Crushing Blow
+  +2 to Mana after each Kill 
+  +2% to Experience Gained
+  `,
+
+  "Temptation (BT only)": `
+  10% Chance to cast level 25 Attract on striking
+  +(200-280)% Enhanced Damage 
+  +20% Increased Attack Speed 
+  +(8-15) to Vitality 
+  +(25-40)% Better Chance of Getting Magic Items
+  +20% Deadly Strike 
+  +20% Increased Attack Speed 
+  +20% Bonus to Attack Rating 
+  7% Life stolen per hit 
+  +2% to Experience Gained 
+  Requirements -20% 
+  Repairs 1 durability in 4 seconds 
+  `,
+  
+  "Broken Promise (BT only)": `
+  +20% Faster Hit Recovery 
+  +20% Faster Run/Walk 
+  +20 to all Attributes 
+  +20% Faster Cast Rate 
+  +20% Increased Attack Speed 
+  20% Better Chance of Getting Magic Items
+  Cannot Be Frozen   
+  `,
+
+  "Dilemma (BT only)": `
+  +1 to Teleport 
+  Drain Life -(20-40)
+  -(23-33) Life after each Kill 
+  (35-50)% Better Chance of Getting Magic Items
+  +2 Life after each Kill 
+  50% Extra Gold from Monsters 
+  Magic Damage Reduced by 7 
+  `,
+
+  "Pestilence (BT only)": `
+  50% Chance to cast level 50 Lower Resist when struck
+  Level 15 Cleansing Aura When Equipped 
+  +3 to Poison Skills 
+  -30% to Enemy Poison Resistance 
+  Prevent Monster Heal 
+  Slows Target by 50% 
+  Magic Resist +50% 
+  Poison Resist +30% 
+  Curse Duration Reduced by 34% 
+  25% Better Chance of Getting Magic Items 
+  +4% to Experience Gained 
+  `,
+
+  "Red (BT only)": `
+  Increase Maximum Life (15-25)% 
+  +(80-100) to Life 
+  9% Life stolen per hit 
+  +(5-10) Life after each Kill 
+  Fire Resist +75% 
+  +20 Fire Absorb 
+  +(50-80)% Enhanced Defense 
+  +10 to Vitality 
+  Replenish Life +5 
+  +2 Life after each Kill 
+  `,
+
+  "Knight's Vigil (BT only)": `
+  Level 10 Defiance Aura When Equipped
+  50% Increased Chance of Blocking 
+  +15 to Strength 
+  +50 to Life 
+  Magic Damage Reduced by 7
+  Damage Reduced by 7 
+  +(5-10)% to Maximum Cold Resist
+  All Resistances +15 
+  +2 Life after each Kill   
+  `,
+
+  "Trust (BT only)": `
+  +20-35 Defense 
+  +20% Regenerate Mana 
+  +20% Lightning Resist 
+  +20% Fire Resist 
+  +50 Defense vs Missile 
+  +50 Defense vs Melee 
+  +15% Damage Taken Goes To Mana
+  +10% Increased Chance of Blocking
   `,
 };
 
