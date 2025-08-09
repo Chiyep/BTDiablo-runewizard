@@ -94,41 +94,15 @@ And instead add script & style tags and copy the file contents inside:
 </body>
 ```
 
-# Development notes
-
-## VSCode setup
-
-The package **prettier** is locked at 2.2.1 because of prettier issue [10918](https://github.com/prettier/prettier/issues/10918)
-
-Likewise **Vetur** extension in VSCode should be locked at 0.33.1, last version to use prettier 2.2.1 (I use _Vue Language Features (Volar)_ which seems to work better with Vue3).
-
-### Typechecking with JSDoc + TypeScript types
-
-The project now uses JSDoc + TypeScript types via ambient `.d.ts` files. This is mainly an experiment, and also a way to make TypeScript optional. You should get correct code completions as well as TypeScript errors in the IDE with VSCode + Volar extension.
-
-## Customizing the header
-
-The game version as well as links in the header can be configured in the `.env` file. It can also be turned off, for eg. including in an existing layout.
-
 ## Using localStorage vs cookie
 
 Runewizard uses **localStorage** (instead of a cookie in the old version) to maintain selected runes: this is so that the app can be built to work completely offline. In the case of loading index.html via `file:///` URL, cookies don't work.
 
-Either way it is a known limitation that if the user clears "Cookie & other site related data" manually in their browser, the user state will be reset. For such a small app I felt it's an acceptable tradeoff, as creating a server for that seems overkill.
-
-## Stylesheets (css, scss)
-
-Stylesheets are kept in one folder under `src/assets/`. This is convenient for me and avoids issues with .scss linting of .vue files in VSCode not working properly (could be a bug with Vetur/Vite or maybe I misconfigured something).
-
-In order to be able to use Sass and Tailwind together, the ordering of CSS declarations matters (cf. Tailwind imports in the main stylesheet). Ideally custom CSS should follow a strict [BEM-like syntax](https://github.com/suitcss/suit/blob/master/doc/naming-conventions.md), to avoid specificity issues.
-
-## SVG icons
-
-The icons come from [icones.js](https://icones.js.org/collection/fa-solid). Click "Components > Vue" in the bottom bar of that site to get the code for an icon. Could use [vite-plugin-icons](https://github.com/antfu/vite-plugin-icons) instead.
+Either way it is a known limitation that if the user clears "Cookie & other site related data" manually in their browser, the user state will be reset.
 
 # Thanks
 
-- @migouelBL for providing required levels data (in the old repository)
+- All credit to fabd for creating this runewizard. This is simply a fork from their open-source project.
 
 # Copyright notices
 
