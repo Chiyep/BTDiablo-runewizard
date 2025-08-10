@@ -1,12 +1,14 @@
 {
-  "name": "diablo2-runewizard",
+  "name": "btdiablo-runewizard",
   "version": "1.1.0",
   "private": true,
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
     "test": "vite build && vite preview --port 8080",
-    "lint": "eslint './src/**/*.{js,ts,tsx,vue}'"
+    "lint": "eslint './src/**/*.{js,ts,tsx,vue}'",
+    "preview": "vite preview",
+    "deploy": "npm run build && gh-pages -d dist"
   },
   "dependencies": {
     "esbuild": "^0.20.1",
@@ -27,6 +29,7 @@
     "eslint-plugin-compat": "^4.1.2",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-vue": "^9.10.0",
+    "gh-pages": "^6.3.0",
     "npm-check-updates": "^16.14.15",
     "postcss": "^8.4.x",
     "prettier": "2.8.7",
