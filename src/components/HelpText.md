@@ -4,7 +4,7 @@ The Runewizard lets you check easily what runewords you can make with the runes 
 
 Click on the runes to mark which ones you have found. The available runewords will be highlighted automatically.
 
-The table can be sorted : try clicking on the table headings, you may find it useful!
+The table can be sorted by clicking on Runeword, Runes, Item Types, or Level.
 
 ## Runes
 
@@ -12,7 +12,7 @@ The runes are listed in order of rarity, from top to bottom, and left to right. 
 
 ## Runewords
 
-**Ladder-only runewords** have a small <span class="rw-Md-ladder">L</span> icon next to the name.
+Not all runewords will be labeled in the same order as in-game. See one that's really bugging you? Reach out to me on Discord for correction: Virus#2483
 
 ## Note about storage
 
