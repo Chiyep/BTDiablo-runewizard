@@ -79,4 +79,5 @@ type TRunewordMeta = {
 
 type TRunewordItem = TRuneword & {
   filterMatch: boolean; // true if this item matches current search filter
+  description?: string; // added to search description
 };
