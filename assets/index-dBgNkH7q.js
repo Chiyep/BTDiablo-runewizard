@@ -174,13 +174,13 @@
   30% Better Chance Of Getting Magic Items
   +4% to Experience Gained
   `,Smoke:`
+  20% Chance to cast level 13 Cloak of Shadows when you kill an enemy
+  20% Faster Hit Recovery
   +75% Enhanced Defense
   +280 Defense Vs. Missile
-  All Resistances +50
-  20% Faster Hit Recovery
-  Level 6 Weaken (18 Charges)
+  +0.5/lvl to Strength (Based on Character Level)
   +10 To Energy
-  -1 To Light Radius
+  All Resistances +50
   `,Stealth:`
   Magic Damage Reduced By 3
   +6 To Dexterity
