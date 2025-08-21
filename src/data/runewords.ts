@@ -569,6 +569,18 @@ const runewords: TRuneword[] = [
     level: 15,
     ttypes: ["Shields"],
   },
+  {
+    title: "Whisper (BT only)",
+    runes: ["Ber", "Ber", "Ist", "Mal"],
+    level: 63,
+    ttypes: ["Polearms", "Spears"],
+  },
+  {
+    title: "Shadows (BT only)",
+    runes: ["Shael", "Sol", "Ko"],
+    level: 57,
+    ttypes: ["Body Armors"],
+    tinfos: "(Assassin)"},
 ];
 
 export default runewords;

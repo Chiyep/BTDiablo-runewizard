@@ -1393,6 +1393,32 @@ const runewordsDesc: TRunewordMeta = {
   +15% Damage Taken Goes To Mana
   +10% Increased Chance of Blocking
   `,
+
+  "Whisper (BT only)": `
+  50% Chance To Cast Level 20 Bone Spear When You Kill An Enemy
+  Level 12 Magic Conviction Aura When Equipped
+  +35% Faster Run/Walk
+  +255-325% Enhanced Damage (varies)
+  -(45-55)% To Enemy Magic Resistance (varies)
+  40% Chance of Crushing Blow
+  Prevent Monster Heal
+  0.5-49.5 To Vitality (Based on Character Level)
+  30% Better Chance of Getting Magic Items
+  Level 21 Cyclone Armor (30 Charges)
+  +6% to Experience Gained
+  `,
+
+  "Shadows (BT only)": `
+  +2 to Assassin Skills
+  +45% Increased Attack Speed
+  +20% Faster Hit Recovery
+  +100-150 Kick Damage (varies)
+  5% Deadly Strike
+  +10 To Dexterity
+  +100-150 Mana (varies)
+  +30% Cold Resist
+  Damage Reduced by 7
+  `,
 };
 
 export default runewordsDesc;
